@@ -23,4 +23,5 @@ Auth::routes();
 
 Route::middleware('auth')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('event/{appointment}', [HomeController::class, 'show'])->name('event');
 });

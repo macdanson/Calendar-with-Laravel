@@ -24,9 +24,15 @@ class HomeController extends Controller
                 'start' => $appointment->start_time,
                 'end' => $appointment->finish_time,
                 'comment' => $appointment->comments,
+                'id' => $appointment->id,
             ];
         }
 
         return view('home', compact('events'));
+    }
+
+    public function show(Appointment $appointment)
+    {
+        return view('show', compact('appointment'));
     }
 }
