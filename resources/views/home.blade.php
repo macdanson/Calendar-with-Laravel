@@ -48,6 +48,12 @@
                         });
                     },
                     events: @json($events),
+
+                    eventClick: function(info) {
+                        info.jsEvent.preventDefault();
+                        const eventId = info.event.id;
+                        window.location.href = `/event/${eventId}`; // Dynamic URL
+                    }
                 });
                 calendar.render();
             });
