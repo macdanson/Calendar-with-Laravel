@@ -17,7 +17,7 @@ class AppointmentFactory extends Factory
     public function definition(): array
     {
         return [
-            'start_time' => fake()->dateTimeBetween('-7 days', now()->addDays(7)),
+            'start_time' => fake()->dateTimeBetween('-7 days', now()->addDays(25)),
             'comments' => fake()->sentence(),
             'client_id' => fake()->randomDigitNotZero(),
             'employee_id' => fake()->randomDigitNotZero(),

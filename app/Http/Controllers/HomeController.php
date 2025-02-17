@@ -20,9 +20,10 @@ class HomeController extends Controller
 
         foreach ($appointments as $appointment) {
             $events[] = [
-                'title' => $appointment->client->name . ' (' . $appointment->employee->name . ')',
+                'title' => "Dr. " . $appointment->employee->name . " appointment with " . $appointment->client->name,
                 'start' => $appointment->start_time,
                 'end' => $appointment->finish_time,
+                'comment' => $appointment->comments,
             ];
         }
 
