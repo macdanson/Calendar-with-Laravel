@@ -13,3 +13,9 @@ This repository is a simple implementation of a calendar in a Laravel project us
 7. Run `php artisan db:seed`
 8. Run `php artisan serve`
 9. Go to link `localhost:8000` OR `127.0.0.1:8000`
+
+## The calendar plotting appointments perday
+![The Calendar](image.png)
+
+## Sample of appointment details page after clicking in the appointment in the calendar
+![Appointme datails](image-1.png)
